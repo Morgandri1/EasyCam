@@ -1,9 +1,12 @@
 import socket
 
+from cv2 import IMWRITE_WEBP_QUALITY
+
 # take the server name and port name
 
 host = 'local host'
-port = 8080
+port = 8000
+ip = input("what is the remote server's IP? \n")
 
 # create a socket at client side
 # using TCP / IP protocol
@@ -12,7 +15,7 @@ s = socket.socket(socket.AF_INET,
 
 # connect it to server and port
 # number on local computer.
-s.connect(('127.0.0.1', port))
+s.connect((ip, port))
 
 # receive message string from
 # server, at a time 1024 B

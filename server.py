@@ -7,8 +7,8 @@ faceCascade = cv2.CascadeClassifier("lib.xml")
 import socket
 
 # take the server name and port name
-host = 'localhost'
-port = 8080
+host = '0.0.0.0'
+port = 8000
 
 # create a socket at server side
 # using TCP / IP protocol
