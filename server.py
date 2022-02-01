@@ -45,9 +45,9 @@ while(True):
 		minSize=(30, 30)
 		)
 
-	data = print("{0} faces!".format(len(faces)))
+	data = print(f"{0} faces".format(len(faces)))
 	#add new commands here 
-	c.send(b"found a face!")
+	c.send(f"found {0} faces!")
 
 	for (x, y, w, h) in faces:
 		cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
